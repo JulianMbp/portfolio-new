@@ -15,21 +15,28 @@ import {
 } from "react-icons/fa";
 import { SiDjango, SiJavascript, SiExpress, SiNextdotjs, SiFlutter, SiSpringboot } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
+import { TbBrandOffice } from "react-icons/tb";
+
 
 const techGroups = [
   {
-    title: "Python/Django",
+    title: "Python / Django",
     technologies: [
       { name: "Python", icon: <FaPython className="text-blue-500" /> },
       { name: "Django", icon: <SiDjango className="text-green-700" /> },
     ],
   },
   {
-    title: "JavaScript/Node.js",
+    title: "JavaScript",
     technologies: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
       { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
       { name: "Express", icon: <SiExpress className="text-gray-500" /> },
+    ],
+  },
+  {
+    title: "JavaScript",
+    technologies: [
       { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
       { name: "Axios", icon: <SiJavascript className="text-blue-400" /> },
     ],
@@ -41,23 +48,13 @@ const techGroups = [
       { name: "React Native", icon: <FaReact className="text-purple-500" /> },
     ],
   },
-  {
-    title: "Flutter",
-    technologies: [
-      { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
-    ],
-  },
-  {
-    title: "Docker",
-    technologies: [
-      { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
-    ],
-  },
+
   {
     title: "Git & Office",
     technologies: [
       { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
       { name: "GitHub", icon: <FaGithub className="text-gray-50" /> },
+      { name: "Office", icon: <TbBrandOffice className="text-azul-500"></TbBrandOffice>},
     ],
   },
   {
@@ -75,9 +72,12 @@ const techGroups = [
     ],
   },
   {
-    title: "Blockchain",
+    title: "Adicionales",
     technologies: [
+      { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
+      { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
       { name: "Blockchain", icon: <FaEthereum className="text-gray-500" /> },
+
     ],
   },
 ];
@@ -111,7 +111,7 @@ const TechCarousel = () => {
               {group.technologies.map((tech, i) => (
                 <motion.div
                   key={i}
-                  className="flex flex-col items-center"
+                  className="flex flex-col items-center text-wrap"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                 >

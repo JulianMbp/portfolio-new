@@ -14,7 +14,7 @@ import Tech from '../components/tecnologias';
 
 export default function SobreMi() {
     return (
-        <main className=" h-full w-full flex justify-center items-center">
+        <main className=" h-full w-full flex justify-center items-center px-20">
             <section className=" border-2 pb-40 rounded-2xl grid-cols-[0.3fr] gap-x-10 grid-rows-[0.07fr] grid border-black m-5 p-5 h-full w-full drop-shadow-2xl shadow-2xl bg-azul-950">
                 <Accion></Accion>
                 <menu className=' order-1 justify-start flex flex-col gap-3'>
@@ -22,10 +22,10 @@ export default function SobreMi() {
                         <Image className=" rounded-full  shadow-2xl shadow-black" src={AboutMe} alt="" />
                     </div>
                     <div className='flex flex-col mb-5 mt-5'>
-                        <h1 className='text-azul-50 items-start justify-center text-center text-3xl drop-shadow-2xl shadow-black'>
+                        <h1 className='text-azul-50 items-start justify-center text-center text-2xl drop-shadow-2xl shadow-black'>
                             Julian M. Bastidas P.
                         </h1>
-                        <div className='flex -mt-2 justify-center gap-x-8 text-azul-50 items-center text-lg opacity-50'>
+                        <div className='flex -mt-2 justify-center gap-x-8 text-azul-50 items-center text-sm opacity-50'>
                             <h2 className=''>
                                 Julian_Mbp
                             </h2>
@@ -69,18 +69,18 @@ export default function SobreMi() {
                     </div>
                 </menu>
                 <div className="order-2">
-                <section className=" border-2 rounded-2xl w-full border-black p-5 drop-shadow-2xl shadow-2xl bg-gray-900">
+                <section className=" border-2 mb-5 rounded-2xl w-full border-black p-5 drop-shadow-2xl shadow-2xl bg-gray-900">
                     <Accion></Accion>
                     <div className="">
                     <Sobremi></Sobremi>
                     </div>
-                
                 </section>
                 <section className="col-start-2 order-2 border-2 rounded-2xl grid-cols-2 grid border-black p-5 w-full drop-shadow-2xl shadow-2xl bg-gray-900">
                     <Accion></Accion>
                     <div className='col-span-2'>
                     <Tech></Tech>
                     </div>
+                
                     
                     
                 </section>
