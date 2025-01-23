@@ -1,6 +1,10 @@
 import Bienvenida from '@/app/sections/bienvenida';
 import SobreMi from '@/app/sections/SobreMi';
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+  title: 'Portfolio de Julian B',
+}
 
 export default function Home() {
   return (

@@ -11,7 +11,7 @@ const ButtonPage: React.FC = () => {
     return(
       <section>
         <button
-        className='h-16 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-tr from-azul-500 to-azul-500 gap-3 
+        className='h-16 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-br from-azul-500 via-azul-600 to-azul-700 gap-3 
             hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-2xl transition-all '
         onClick={openModal}>

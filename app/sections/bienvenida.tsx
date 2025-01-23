@@ -7,8 +7,8 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Bienvenida() {
     return (
-        <section className="h-screen w-full flex justify-center items-center overflow-y-hidden inset-0">
-            <div className='flex justify-center items-center gap-x-5'>
+        <section className="h-screen w-full grid grid-cols-2 justify-center items-center overflow-y-hidden inset-0">
+            <div className='flex justify-center items-center gap-x-5 col-span-2 m-20'>
                 <div className='flex justify-center items-center'>
                     <Image className="rounded-full shadow-2xl shadow-black" src={Me} alt="" />
                 </div>
@@ -35,6 +35,23 @@ function Bienvenida() {
                         <ButtonCV></ButtonCV>
                     </div>
                 </div>
+
+            </div>
+            <div className='justify-center items-center flex col-span-2'>
+            <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            strokeWidth="1.5" 
+            stroke="currentColor" 
+            className="mt-16 size-[80px] animate-bounce text-slate-50"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" 
+            />
+          </svg>
             </div>
 
 

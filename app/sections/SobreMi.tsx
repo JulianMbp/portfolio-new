@@ -11,11 +11,12 @@ import Clock from '../components/reloj';
 import React from 'react';
 import Sobremi from '../components/SobreMI';
 import Tech from '../components/tecnologias';
+import Btn from '../components/btnAcceso';
 
 export default function SobreMi() {
     return (
         <main className=" h-full w-full flex justify-center items-center px-20">
-            <section className=" border-2 pb-40 rounded-2xl grid-cols-[0.3fr] gap-x-10 grid-rows-[0.07fr] grid border-black m-5 p-5 h-full w-full drop-shadow-2xl shadow-2xl bg-azul-950">
+            <section className=" border-2 rounded-2xl grid-cols-[0.3fr] gap-x-10 grid-rows-[0.07fr] grid border-black m-5 p-5 h-full w-full drop-shadow-2xl shadow-2xl bg-azul-950">
                 <Accion></Accion>
                 <menu className=' order-1 justify-start flex flex-col gap-3'>
                     <div className=' justify-center items-center flex px-10'>
@@ -75,7 +76,10 @@ export default function SobreMi() {
                     <Sobremi></Sobremi>
                     </div>
                 </section>
-                <section className="col-start-2 order-2 border-2 rounded-2xl grid-cols-2 grid border-black p-5 w-full drop-shadow-2xl shadow-2xl bg-gray-900">
+                <section className=''>
+                    <Btn></Btn>
+                </section>
+                <section className=" order-2 border-2 rounded-2xl grid-cols-2 grid border-black p-5 w-full drop-shadow-2xl shadow-2xl bg-gray-900">
                     <Accion></Accion>
                     <div className='col-span-2'>
                     <Tech></Tech>
