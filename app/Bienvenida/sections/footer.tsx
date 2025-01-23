@@ -1,5 +1,5 @@
 'use client';
-import Modal from '@/app/components/Modal';
+import Modal from '@/app/Bienvenida/components/Modal';
 import { useState } from 'react';
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoIosMail } from 'react-icons/io';

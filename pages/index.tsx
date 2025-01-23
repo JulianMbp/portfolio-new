@@ -1,7 +1,7 @@
-import Bienvenida from '@/app/sections/bienvenida';
-import SobreMi from '@/app/sections/SobreMi';
-import Footer from '@/app/sections/footer';
-import type { Metadata } from 'next'
+import Bienvenida from '@/app/Bienvenida/sections/bienvenida';
+import Footer from '@/app/Bienvenida/sections/footer';
+import SobreMi from '@/app/Bienvenida/sections/SobreMi';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Portfolio de Julian B',

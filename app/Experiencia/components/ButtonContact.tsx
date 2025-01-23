@@ -1,8 +1,8 @@
 'use client';
-import Modal from '@/app/components/Modal';
+import Modal from '@/app/Bienvenida/components/Modal';
 import { useState } from 'react';
 import { IoIosMail } from 'react-icons/io';
-import Mail from './mail';
+import Mail from '@/app/Bienvenida/components/mail';
 
 
 const ButtonPage: React.FC = () => {
@@ -12,12 +12,12 @@ const ButtonPage: React.FC = () => {
     return(
       <section>
         <button
-        className='h-16 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-br from-azul-500 via-azul-600 to-azul-700 gap-3 
+        className='h-10 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-br from-azul-500 via-azul-600 to-azul-700 gap-3 
             hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-2xl transition-all '
         onClick={openModal}>
-                <svg className="order-2 h-8 w-8 text-azul-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-                <h1 className="text-azul-50 order-1 font-medium font-moono text-2xl">Contactame</h1>
+                <svg className="order-2 h-5 w-5 text-azul-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                <h1 className="text-azul-50 order-1 font-medium font-moono text-lg hidden">Contactame</h1>
             </button>
       <br />
       <Modal isOpen={isModalOpen} onClose={closeModal} title="Ingeniero de Software" >
