@@ -2,7 +2,7 @@
 
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
-import Me from '@/public/img/About_Me.jpg';
+import Me from '@/public/img/About_Me.webp';
 import Image from 'next/image';
 
 interface ModalProps {

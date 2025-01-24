@@ -1,5 +1,5 @@
 'use client';
-import AboutMe from '@/public/img/AboutMePerfil.jpg';
+import AboutMe from '@/public/img/AboutMePerfil.webp';
 import Image from 'next/image';
 import { CiClock2, CiLinkedin, CiLocationOn } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
-import Me from "@/./public/img/julian-pixel.jpeg";
+import Me from "@/./public/img/julian-pixel (1).webp";
 import ButtonCV from "@/app/Experiencia/components/ButtonCV";
 import ButtonPage from "@/app/Experiencia/components/ButtonContact";
 
@@ -33,7 +33,7 @@ export default function Presentacion() {
 
             {/* Componente principal */}
             <div
-                className={`fixed top-10 left-5 flex flex-col items-center bg-azul-400 border-2 border-black text-white rounded-2xl shadow-2xl p-5 z-50 transition-all duration-700 transform ${
+                className={`fixed top-10 left-5 flex flex-col items-center bg-gradient-to-bl from-azul-400 via-azul-700 to-azul-900 border-2 border-black text-white rounded-2xl shadow-2xl p-5 z-50 transition-all duration-700 transform ${
                     isVisible
                         ? "scale-100 translate-y-0 opacity-100"
                         : "scale-0 -translate-y-10 opacity-0"

@@ -1,5 +1,5 @@
 'use client';
-import Me from '@/public/img/julian-pixel.jpeg';
+import Me from '@/public/img/julian-pixel (1).webp';
 import Image from 'next/image';
 import ButtonPage from '../components/ButtonContact';
 import ButtonCV from '../components/ButtonCV';
