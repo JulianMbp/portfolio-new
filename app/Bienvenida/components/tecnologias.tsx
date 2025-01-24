@@ -13,9 +13,11 @@ import {
   FaGoogle,
   FaEthereum,
 } from "react-icons/fa";
-import { SiDjango, SiJavascript, SiExpress, SiNextdotjs, SiFlutter, SiSpringboot } from "react-icons/si";
+import { SiDjango, SiJavascript, SiMongodb, SiPrisma, SiExpress, SiNextdotjs, SiFlutter, SiSpringboot } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
 import { TbBrandOffice } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 
 
 const techGroups = [
@@ -30,13 +32,8 @@ const techGroups = [
     title: "JavaScript",
     technologies: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-      { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
+      { name:"JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
       { name: "Express", icon: <SiExpress className="text-gray-500" /> },
-    ],
-  },
-  {
-    title: "JavaScript",
-    technologies: [
       { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
       { name: "Axios", icon: <SiJavascript className="text-blue-400" /> },
     ],
@@ -69,6 +66,16 @@ const techGroups = [
     technologies: [
       { name: "Azure", icon: <FaAws className="text-blue-500" /> },
       { name: "Google Cloud", icon: <FaGoogle className="text-red-500" /> },
+    ],
+  },
+  {
+    title: "Bases de Datos",
+    technologies: [
+      { name: "PostgresSQL", icon: <BiLogoPostgresql className="text-blue-500" /> },
+      { name: "MySql", icon: <SiMysql className="text-blue-400" /> },
+      { name: "Mongodb", icon: <SiMongodb className="text-green-500" /> },
+      { name: "PrismaORM", icon: <SiPrisma className="text-slate-50" /> },
+
     ],
   },
   {
