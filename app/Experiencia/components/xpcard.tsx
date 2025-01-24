@@ -1,10 +1,8 @@
 "use client"
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image"; // Importando el componente Image de Next.js
 import { Typewriter } from "react-simple-typewriter";
 import Accion from '../../Bienvenida/components/btnAccion';
-
 
 const techGroups = [
   {
@@ -48,21 +46,76 @@ const techGroups = [
     title: "Estudios",
     descriptions: [
       {
-        title: "Universidad Ejemplo",
+        title: "",
         content: (
-          <div className="flex flex-col items-start gap-4">
-            <p>Licenciatura en Ciencias de la Computación.</p>
-            <Image
-              src="/ruta-a-la-imagen.jpg" // Reemplaza con la ruta real de la imagen
-              alt="Imagen relacionada con los estudios"
-              width={150}
-              height={150}
-              className="rounded-lg"
-            />
+          <div className="grid grid-cols-2 gap-4 ">
+            <div className="flex flex-col gap-2">
+            <p className="text-2xl">Bachiller Academico</p>
+            <p className="text-sm text-white pr-4 opacity-70"> Institucion Educativa Nuestra Señora de las Lajas</p>
+            <div className="justify-center items-center flex ">
+
+            </div>
+          <div className="flex flex-col">
+            <h1 className="text-2xl text-white">Ingenieria de Software</h1>
+            <p className="text-sm text-white opacity-70"> Universidad Manuela Beltran</p>
+            <p className="text-sm text-white opacity-70 flex gap-1 ml-2"> 
+              <p className="text-azul-300">
+                Desde:
+              </p>
+                2020
+            </p>
+            <p className="text-sm text-white opacity-70 flex gap-1 ml-2"> 
+              <p className="text-azul-300">
+                Hasta:
+              </p>
+                2023
+            </p>
+            <p className="text-sm text-white opacity-70"> Universidad Cooperativa de Colombia</p>
+            <p className="text-sm text-white opacity-70 flex gap-1 ml-2"> 
+              <p className="text-azul-300">
+                Desde:
+              </p>
+                2024
+            </p>
+            <p className="text-sm text-white opacity-70 flex gap-1 ml-2"> 
+              <p className="text-azul-300">
+                Hasta:
+              </p>
+                2025
+            </p>
+            {/* <Image className="h-32 w-32 object-cover rounded-xl " src={Grado} alt={""}/> */}
+
           </div>
+          <div className=" flex flex-col gap-5">
+          </div >
+          </div>
+          <div>
+          <ol className="text-zinc-50">
+            <h1 className="font-semibold  text-2xl text-white">Estudios Complementarios</h1>
+            <li>• Cloud computing </li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(UMB)</p>
+            <li>• Alfabetización informática </li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(SENA)</p>
+            <li>• Herramientas ofimáticas TIC </li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(SENA)</p>
+            <li>• Base de Datos Microsoft Access
+            (SENA)</li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(SENA)</p>
+            <li>• RESTful Web Services</li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(udemy)</p>
+            <li>• Director Deportivo Nv III
+            </li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">(EntrenamientoCiclismo - España)</p>
+            <li>• Licencia de Conducción</li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1"> A2 y B1</p>
+            <li>• Guitarra</li>
+            <p className="text-cyan-600 text-left opacity-70 -mt-1">10 años de experiencia</p>
+          </ol>
+          </div>
+          </div>
+          
         )
       },
-      { title: "Cursos Adicionales", content: "Certificación en desarrollo web." }
     ]
   }
 ];
@@ -77,8 +130,8 @@ const ExperiencesSection = () => {
   return (
     <div className=" items-center justify-center grid-cols-[0.3fr] gap-x-10 grid-rows-[0.07fr] text-white bg-gray-900 m-10 p-5 rounded-lg shadow-lg">
       <Accion></Accion>
-      <h1 className=" text-9xl " >Experiencia</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mt-5">
+      <h1 className=" text-9xl " > _Experiencia_</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-5">
         {techGroups.map((group, index) => (
           <motion.div
             key={index}
