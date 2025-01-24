@@ -19,7 +19,7 @@ const SobreMi = () => {
         
       </h1>
       <p className="text-2xl text-azul-50 drop-shadow-2xl p-5 text-center">    
-        ¡Hola! 👋 Soy Julián, ingeniero de software 🧑‍💻.Me encanta crear cosas innovadoras y llevar ideas al siguiente nivel 🚀. Soy una persona divertida, extrovertida y me apasiona programar 💡💻.Vivo en la hermosa ciudad de Pasto 🏞️.Siempre que te cruces conmigo, te recibiré con mi mejor sonrisa 😁✨,
+        ¡Hola! 👋 Soy Julián, ingeniero de software 🧑‍💻.Me encanta crear cosas innovadoras y llevar ideas al siguiente nivel 🚀. Soy una persona divertida, extrovertida y me apasiona programar 💡💻.Vivo en la hermosa ciudad de Pasto 🏞️.Siempre que te cruces conmigo, te recibiré con mi mejor sonrisa. 😁✨
       </p>
     </div>
   );
