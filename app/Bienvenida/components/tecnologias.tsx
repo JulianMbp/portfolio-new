@@ -88,7 +88,7 @@ const TechCarousel = () => {
       <h1 className="text-6xl font-bold h-32">
               <Typewriter
                   words={[
-                    "Tecnologías"          
+                    "<Tecnologías/>"          
         ]}
                   loop={true}
                   cursor

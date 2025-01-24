@@ -7,11 +7,11 @@ const SobreMi = () => {
       <h1 className="text-9xl text-azul-50 drop-shadow-2xl p-5 font-bold h-40">
       <Typewriter
           words={[
-            "Sobre Mi"          
+            "_Sobre Mi"          
 ]}
           loop={false}
           cursor
-          cursorStyle=""
+          cursorStyle="_"
           typeSpeed={100}
           deleteSpeed={80}
           delaySpeed={4000}

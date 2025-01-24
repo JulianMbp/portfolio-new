@@ -2,6 +2,7 @@ import Bienvenida from '@/app/Bienvenida/sections/bienvenida';
 import Footer from '@/app/Bienvenida/sections/footer';
 import SobreMi from '@/app/Bienvenida/sections/SobreMi';
 import type { Metadata } from 'next';
+import Exp from '@/app/Experiencia/components/card'
 
 export const metadata: Metadata = {
   title: 'Portfolio de Julian B',
@@ -14,7 +15,7 @@ export default function Home() {
         <Bienvenida/>
         <SobreMi/>
         <Footer/>
-        
+        <Exp/> 
     </main>
   );
 }
