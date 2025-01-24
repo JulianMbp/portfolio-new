@@ -19,22 +19,22 @@ export default function Header() {
         <Link href="/experiencia" className="text-xl text-azul-50 p-2">Experiencia</Link>
                
         </button> 
-        <div className="h-16 order-1 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
+        <button className="h-16 order-1 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
             hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-2xl transition-all ">
             <FaHome className="h-8 w-8 text-white"/>
-        <Link href="/" className="text-xl text-azul-50 p-2">Home</Link>
-        </div>
+        <Link href="/" className="text-xl text-azul-50 p-2">Inicio</Link>
+        </button>
         
-        <div className="h-16 order-3 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
+        <button className="h-16 order-3 shadow-2xl drop-shadow-2xl duration-300 flex items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
             hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-2xl transition-all ">
                                     <svg className="h-5 w-5 text-slate-100 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
                     </svg>
         <Link href="/proyectos" className="text-xl text-azul-50 p-2">Proyectos</Link>
-        </div>
-        <div className="h-16 order-4 shadow-2xl drop-shadow-2xl duration-300 items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
+        </button>
+        <button className="h-16 order-4 shadow-2xl drop-shadow-2xl duration-300 items-center rounded-3xl p-3 bg-gradient-to-t from-azul-700 via-azul-800 to-azul-900 gap-3 
             hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-2xl transition-all flex ">
                     <svg className="h-5 w-5 text-slate-100 " viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -42,7 +42,7 @@ export default function Header() {
                         <circle cx="12" cy="7" r="4" />
                     </svg>
         <Link href="/mas-sobre-mi" className="text-xl text-azul-50 p-2">Mas_Sobre_Mi</Link>
-        </div>
+        </button>
 </div>
 
 
