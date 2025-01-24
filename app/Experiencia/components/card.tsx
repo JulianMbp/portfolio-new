@@ -6,8 +6,7 @@ import Me from "@/./public/img/julian-pixel (1).webp";
 import ButtonCV from "@/app/Experiencia/components/ButtonCV";
 import ButtonPage from "@/app/Experiencia/components/ButtonContact";
 import { IoMdClose } from "react-icons/io";
-import { FaMinus } from "react-icons/fa6";
-import { MdOpenInFull } from "react-icons/md";
+
 
 export default function Presentacion() {
     const [isVisible, setIsVisible] = useState(false);
