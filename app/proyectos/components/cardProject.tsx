@@ -6,10 +6,23 @@ import project1 from '../../../public/Tabs/potencia.jpg';
 import project2 from '../../../public/Tabs/Hackaton.webp';
 import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
-
-import { SlSocialGithub } from "react-icons/sl";
-import { FaGitAlt, FaGithub } from "react-icons/fa";
-import { TbBrandOffice } from "react-icons/tb";
+import { FaBootstrap, FaGithub, FaPhp } from "react-icons/fa";
+import { TiHtml5 } from "react-icons/ti";
+import { SiMysql } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { DiDjango } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiAxios } from "react-icons/si";
+import { SiHiveBlockchain } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiFirebase } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { SiExpo } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
 
 const projects = [
   {
@@ -17,11 +30,16 @@ const projects = [
     title: "Campeon Hackaton PotenCIA Summit 2024",
     description: "Este es el primer proyecto del portafolio. Involucra diseño y desarrollo de interfaces.",
     imageUrl: project1,
-    githubUrl: "https://github.com/JulianMbp/Medicamentos.git", // URL del repositorio
+    githubUrl: "https://github.com/JulianMbp/Medicamentos.git", 
     technologies: [
-      { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-      { name: "GitHub", icon: <SlSocialGithub className="text-gray-50" /> },
-      { name: "Office", icon: <TbBrandOffice className="text-azul-500" /> },
+      { name: "Node.Js", icon: <FaNodeJs className="text-green-500 h-8 w-8" /> },
+      { name: "Django", icon: <DiDjango className= "text-slate-900 h-8 w-8" />      },
+      { name: "React", icon: <FaReact className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "Next.js", icon: <RiNextjsFill className="text-slate-950 h-8 w-8" /> },
+      { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-600 h-8 w-8" /> },
+      { name: "Blockchain", icon: <SiHiveBlockchain className="text-slate-50 h-8 w-8" /> },
+      { name: "Axios", icon: <SiAxios className="text-slate-950 h-8 w-8" /> },
     ],
   },
   {
@@ -29,10 +47,12 @@ const projects = [
     title: "Campeon Hackaton Nexo Digital",
     description: "Este proyecto se centra en la creación de una API eficiente y escalable.",
     imageUrl: project2,
-    githubUrl: "https://github.com/JulianMbp/Hackaton2024", // URL del repositorio
+    githubUrl: "https://github.com/JulianMbp/Hackaton2024",
     technologies: [
-      { name: "Node.js", icon: <FaGitAlt className="text-green-500" /> },
-      { name: "Express", icon: <SlSocialGithub className="text-red-600" /> },
+      { name: "React-Native", icon: <TbBrandReactNative className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "FireBase", icon: <SiFirebase className="text-orange-600 h-8 w-8" /> },
+      { name: "Expo", icon: <SiExpo className="text-slate-950 h-8 w-8" /> },
     ],
   },
   {
@@ -40,21 +60,30 @@ const projects = [
     title: "Proyecto EPS",
     description: "Un proyecto innovador que combina tecnología y diseño gráfico.",
     imageUrl: project3,
-    githubUrl: "https://github.com/JulianMbp/EPS_Front.git", // URL del repositorio
+    githubUrl: "https://github.com/JulianMbp/EPS_Front.git", 
     technologies: [
-      { name: "React", icon: <FaGitAlt className="text-blue-500" /> },
-      { name: "CSS", icon: <TbBrandOffice className="text-teal-500" /> },
+      { name: "Node.Js", icon: <FaNodeJs className="text-green-500 h-8 w-8" /> },
+      { name: "React", icon: <FaReact className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "Next.js", icon: <RiNextjsFill className="text-slate-950 h-8 w-8" /> },
+      { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-600 h-8 w-8" /> },
+      { name: "Axios", icon: <SiAxios className="text-slate-950 h-8 w-8" /> },
+      { name: "Express", icon: <SiExpress className="text-slate-950 h-8 w-8" /> },
+      { name: "Docker", icon: <FaDocker className="text-blue-400 h-8 w-8" /> },
     ],
   },
   {
     id: 4,
     title: "Practica Universitaria",
-    description: "Un proyecto innovador que combina tecnología y diseño gráfico.",
+    description: "Desarrollar un aplicativo web PHP, JavaScript, Bootstrap, HTML, y MySQL para certificar estudiantes con generación de PDF, seguridad y autenticación en institución educativa.",
     imageUrl: project4,
-    githubUrl: "https://github.com/JulianMbp/PhP-Crud.git", // URL del repositorio
+    githubUrl: "https://github.com/JulianMbp/PhP-Crud.git", 
     technologies: [
-      { name: "PHP", icon: <FaGitAlt className="text-blue-600" /> },
-      { name: "MySQL", icon: <SlSocialGithub className="text-yellow-600" /> },
+      { name: "PhP", icon: <FaPhp className="text-purple-50 h-8 w-8" /> },
+      { name: "Bootstrap", icon: <FaBootstrap className= "text-violet-400 h-8 w-8" />      },
+      { name: "Html5", icon: <TiHtml5 className="text-yellow-500 h-8 w-8" /> },
+      { name: "Javascript", icon: <IoLogoJavascript className="text-yellow-400 h-8 w-8" /> },
+      { name: "MySQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
     ],
   },
 ];
@@ -67,8 +96,8 @@ const Portfolio = () => {
     if (activeCard !== id) return;
     const { clientX, clientY, currentTarget } = event;
     const { left, top, width, height } = currentTarget.getBoundingClientRect();
-    const x = ((clientX - left) / width - 0.5) * 30; // Scale rotation X
-    const y = ((clientY - top) / height - 0.5) * -30; // Scale rotation Y
+    const x = ((clientX - left) / width - 0.5) * 30; 
+    const y = ((clientY - top) / height - 0.5) * -30; 
     setMousePosition({ x, y });
   };
 
@@ -100,8 +129,8 @@ const Portfolio = () => {
             <Image
               src={project.imageUrl}
               alt={project.title}
-              width={500} // Ajusta el tamaño según tus necesidades
-              height={400} // Ajusta el tamaño según tus necesidades
+              width={500} 
+              height={400} 
               className="w-full h-full object-cover rounded-2xl"
             />
             <motion.div
@@ -116,9 +145,9 @@ const Portfolio = () => {
               <div className="text-center text-white p-4">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-sm">{project.description}</p>
-                <div className="flex gap-4 mt-4 justify-center">
+                <div className="grid grid-cols-3 gap-4 mt-4 justify-center">
                   {project.technologies.map((tech, index) => (
-                    <div key={index} className="flex items-center gap-2">
+                    <div key={index} className=" border rounded-xl border-white p-2 flex items-center gap-2">
                       {tech.icon}
                       <span>{tech.name}</span>
                     </div>
@@ -131,7 +160,7 @@ const Portfolio = () => {
           {/* Botones fuera del efecto 3D */}
           <div className="absolute bottom-1 right-4 flex gap-4">
             <a
-              href={project.githubUrl} // URL del repositorio por proyecto
+              href={project.githubUrl} 
               className="bg-gradient-to-r h-10 from-azul-400 to-azul-600 flex gap-2 items-center text-zinc-50 rounded-lg p-2 mt-5 hover:scale-110 active:scale-95 active:duration-200 
               hover:shadow-2xl transition-all"
             >
