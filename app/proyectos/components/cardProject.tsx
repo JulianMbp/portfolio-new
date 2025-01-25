@@ -6,7 +6,7 @@ import project1 from '../../../public/Tabs/potencia.jpg';
 import project2 from '../../../public/Tabs/Hackaton.webp';
 import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
-import { FaBootstrap, FaGithub, FaPhp } from "react-icons/fa";
+import { FaBootstrap, FaGithub, FaPhp, FaWeight } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { SiMysql } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
@@ -28,7 +28,7 @@ const projects = [
   {
     id: 1,
     title: "Campeon Hackaton PotenCIA Summit 2024",
-    description: "Este es el primer proyecto del portafolio. Involucra diseño y desarrollo de interfaces.",
+    description: "Busqueda de medicamentos segun la ubicacion de la eps, gestion de usuarios e implementacion de IA y blockchain Blockchain para la busqueda de medicamentos en tiempo real IA predictiva de medicamentos",
     imageUrl: project1,
     githubUrl: "https://github.com/JulianMbp/Medicamentos.git", 
     technologies: [
@@ -49,7 +49,7 @@ const projects = [
     imageUrl: project2,
     githubUrl: "https://github.com/JulianMbp/Hackaton2024",
     technologies: [
-      { name: "React-Native", icon: <TbBrandReactNative className="text-azul-300 h-8 w-8" /> },
+      { name: "React Native", icon: <TbBrandReactNative className="text-azul-300 h-8 w-8" /> },
       { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
       { name: "FireBase", icon: <SiFirebase className="text-orange-600 h-8 w-8" /> },
       { name: "Expo", icon: <SiExpo className="text-slate-950 h-8 w-8" /> },
@@ -114,48 +114,49 @@ const Portfolio = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {projects.map((project) => (
         <div key={project.id} className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg">
+        <motion.div
+          className="relative w-full h-96" 
+          style={
+            activeCard === project.id
+              ? { rotateX: mousePosition.y, rotateY: mousePosition.x }
+              : { rotateX: 0, rotateY: 0 }
+          }
+          onMouseMove={(e) => handleMouseMove(e, project.id)}
+          onMouseEnter={() => handleMouseEnter(project.id)}
+          onMouseLeave={handleMouseLeave}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        >
+          <Image
+            src={project.imageUrl}
+            alt={project.title}
+            width={500} 
+            height={500}  // Ajusta aquí el tamaño de la imagen
+            className="w-full h-full object-cover rounded-2xl"  // Ajusta aquí la altura
+          />
           <motion.div
-            className="relative w-full h-full"
+            className="absolute inset-0 bg-[#2A7890] bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 rounded-2xl"
             style={
               activeCard === project.id
                 ? { rotateX: mousePosition.y, rotateY: mousePosition.x }
                 : { rotateX: 0, rotateY: 0 }
             }
-            onMouseMove={(e) => handleMouseMove(e, project.id)}
-            onMouseEnter={() => handleMouseEnter(project.id)}
-            onMouseLeave={handleMouseLeave}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <Image
-              src={project.imageUrl}
-              alt={project.title}
-              width={500} 
-              height={400} 
-              className="w-full h-full object-cover rounded-2xl"
-            />
-            <motion.div
-              className="absolute inset-0 bg-[#2A7890] bg-opacity-80 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 rounded-2xl"
-              style={
-                activeCard === project.id
-                  ? { rotateX: mousePosition.y, rotateY: mousePosition.x }
-                  : { rotateX: 0, rotateY: 0 }
-              }
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              <div className="text-center text-white p-4">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-sm">{project.description}</p>
-                <div className="grid grid-cols-3 gap-4 mt-4 justify-center">
-                  {project.technologies.map((tech, index) => (
-                    <div key={index} className=" border rounded-xl border-white p-2 flex items-center gap-2">
-                      {tech.icon}
-                      <span>{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>                
-            </motion.div>
+            <div className="text-center text-white p-8">
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <p className="text-sm">{project.description}</p>
+              <div className="grid grid-cols-3 gap-4 mt-4 justify-center">
+                {project.technologies.map((tech, index) => (
+                  <div key={index} className=" border rounded-xl border-white p-2 flex items-center gap-2">
+                    {tech.icon}
+                    <span>{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>                
           </motion.div>
+        </motion.div>
+      
 
           {/* Botones fuera del efecto 3D */}
           <div className="absolute bottom-1 right-4 flex gap-4">
