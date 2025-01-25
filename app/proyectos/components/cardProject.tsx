@@ -27,7 +27,7 @@ import { FaDocker } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    title: "Campeon Hackaton PotenCIA Summit 2024",
+    title: "Campeon Hackaton PotenCIA Summit 2024 App Web",
     description: "Busqueda de medicamentos segun la ubicacion de la eps, gestion de usuarios e implementacion de IA y blockchain Blockchain para la busqueda de medicamentos en tiempo real IA predictiva de medicamentos",
     imageUrl: project1,
     githubUrl: "https://github.com/JulianMbp/Medicamentos.git", 
@@ -44,8 +44,8 @@ const projects = [
   },
   {
     id: 2,
-    title: "Campeon Hackaton Nexo Digital",
-    description: "Este proyecto se centra en la creación de una API eficiente y escalable.",
+    title: "Campeon Hackaton Nexo Digital App Mobile",
+    description: "Navegación por Proyectos: Visualización de la lista de proyectos en el dashboard. Gestión de Tareas y Bitácoras: Acceso y creación de registros en cada proyecto.",
     imageUrl: project2,
     githubUrl: "https://github.com/JulianMbp/Hackaton2024",
     technologies: [
@@ -58,7 +58,7 @@ const projects = [
   {
     id: 3,
     title: "Proyecto EPS",
-    description: "Un proyecto innovador que combina tecnología y diseño gráfico.",
+    description: "Desarrollar un aplicativo web, JavaScript, React, Next.js, PostgreSQL, Docker, node.js, y Tailwind Desarrollar el Sistema de autenticación y sesiones.Gestion de pacientes, medicamentos y citas",
     imageUrl: project3,
     githubUrl: "https://github.com/JulianMbp/EPS_Front.git", 
     technologies: [
@@ -143,7 +143,7 @@ const Portfolio = () => {
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
             <div className="text-center text-white p-8">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
               <p className="text-sm">{project.description}</p>
               <div className="grid grid-cols-3 gap-4 mt-4 justify-center">
                 {project.technologies.map((tech, index) => (
