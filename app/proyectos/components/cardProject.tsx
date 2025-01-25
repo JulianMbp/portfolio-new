@@ -60,10 +60,10 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [activeCard, setActiveCard] = useState(null);
+  const [activeCard, setActiveCard] = useState<number | null>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (event, id) => {
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>, id: number | null) => {
     if (activeCard !== id) return;
     const { clientX, clientY, currentTarget } = event;
     const { left, top, width, height } = currentTarget.getBoundingClientRect();
@@ -72,7 +72,7 @@ const Portfolio = () => {
     setMousePosition({ x, y });
   };
 
-  const handleMouseEnter = (id) => {
+  const handleMouseEnter = (id: number) => {
     setActiveCard(id);
   };
 
