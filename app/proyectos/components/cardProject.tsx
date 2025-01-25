@@ -6,7 +6,7 @@ import project1 from '../../../public/Tabs/potencia.jpg';
 import project2 from '../../../public/Tabs/Hackaton.webp';
 import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
-import { FaBootstrap, FaGithub, FaPhp, FaWeight } from "react-icons/fa";
+import { FaBootstrap, FaGithub, FaPhp } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { SiMysql } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
