@@ -1,4 +1,5 @@
 'use client'
+import Video from '@/app/mas-sobre-mi/sections/video'
 import Presentacion from "@/app/Experiencia/components/card";
 
 
@@ -10,7 +11,9 @@ export default function Proyectos(){
                 <Presentacion></Presentacion>
             </div>
             <div className="font-bold text-azul-50 drop-shadow-2xl text-center order-2 col-span-2 justify-center items-center">
-            <h1 className="text-9xl drop-shadow-2xl px-10">Pronto</h1>
+            <div className="flex justify-center items-center mb-[10%] h-full w-full ">
+                <Video />
+            </div>
             </div>
         </section>
     );
