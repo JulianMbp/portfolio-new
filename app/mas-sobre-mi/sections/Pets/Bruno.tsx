@@ -68,7 +68,7 @@ const brunoCard = () => {
                         className="lg:flex lg:justify-between grid grid-cols-1 md:grid md:grid-cols-1 justify-center items-center text-center md:justify-center md:items-center md:text-center lg:text-left"
                     >
                         <motion.h1 variants={itemAnimation} className="text-4xl lg:text-left pl-10 md:pl-0">Bruno🍊</motion.h1>
-                        <motion.h1 variants={itemAnimation} className="text-2xl text-brunoColor-950 text-opacity-80 pl-10 md:pl-0">Edad: 1 año 10 meses</motion.h1>
+                        <motion.h1 variants={itemAnimation} className="text-2xl text-brunoColor-950 text-opacity-80 pl-10 md:pl-0">Edad: 2 años</motion.h1>
                     </motion.dl>
                     <motion.p variants={itemAnimation} className="text-brunoColor-900 text-opacity-80 lg:text-left pl-10 md:pl-0">Gato Naranja</motion.p>
                     <motion.p variants={itemAnimation} className="text-brunoColor-900 text-sm text-opacity-60 pb-5 pl-10 md:pl-0 lg:px-0 lg:pb-0 lg:text-left">
