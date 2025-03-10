@@ -40,6 +40,44 @@ const techGroups = [
               </p>
             </div>
       )},
+      { title: (
+        <div className="flex flex-col">
+            <h1 className=" text-white">Practicante ParqueSoft Nariño</h1>
+          <p className="text-sm text-white opacity-50">ParqueSoft Nariño(Pasto)</p>
+        </div>
+  ),
+        content: (
+            <div className="grid grid-cols-[0.2fr_1fr] divide-x-2 text-sm">
+              <div className=" ">
+                <p className="order-1 font-semibold text-base text-azul-400 ">Desde:</p>
+                <p className="order-2 text-zinc-50 text-sm">Febrero-2025</p>
+                <p className="order-3 font-semibold text-base  text-azul-400">Hasta:</p>
+                <p className="order-4 text-zinc-50 text-sm ">Mayo-2025</p>
+              </div >
+              <p className="pl-3">
+              Desarrollar, mantener y optimizar software de alta calidad, implementar mejoras en sistemas existentes, realizar pruebas, documentar proyectos, automatizar procesos, aportar ideas innovadoras, investigar nuevas tecnologías y colaborar con equipos multidisciplinarios para satisfacer las necesidades empresariales.
+              </p>
+            </div>
+      )},
+      { title: (
+        <div className="flex flex-col">
+            <h1 className=" text-white">Joven Investigador</h1>
+          <p className="text-sm text-white opacity-50">Universidad de Nariño(Pasto)</p>
+        </div>
+  ),
+        content: (
+            <div className="grid grid-cols-[0.2fr_1fr] divide-x-2 text-sm">
+              <div className=" ">
+                <p className="order-1 font-semibold text-base text-azul-400 ">Desde:</p>
+                <p className="order-2 text-zinc-50 text-sm">Febrero-2025</p>
+                <p className="order-3 font-semibold text-base  text-azul-400">Hasta:</p>
+                <p className="order-4 text-zinc-50 text-sm ">Febrero-2026</p>
+              </div >
+              <p className="pl-3">
+                Participación en proyectos de investigación sobre desarrollo de software, contribuyendo en la creación de soluciones innovadoras y en la mejora de procesos académicos, así como en la presentación de resultados en conferencias.
+              </p>
+            </div>
+      )},
     ]
   },
   {
