@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { CiClock2, CiLinkedin, CiLocationOn } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { MdOutlineWorkOutline } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
 import Accion from '../components/btnAccion';
 import Mail from '../components/mail';
@@ -37,6 +38,10 @@ export default function SobreMi() {
                                 King Julian
                             </h2>
                         </div>
+                    </div>
+                    <div className=' flex pl-7 justify-start items-start text-azul-50 gap-2'>
+                        <MdOutlineWorkOutline className='h-7 w-7 text-azul-50 '></MdOutlineWorkOutline>
+                        <p className=' text-xl'>Practicante ParqueSoft Nariño</p>
                     </div>
                     <div className=' flex pl-7 justify-start items-start text-azul-50 gap-2'>
                         <CiLocationOn className='h-7 w-7 text-azul-50 '></CiLocationOn>

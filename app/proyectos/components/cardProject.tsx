@@ -6,23 +6,12 @@ import project1 from '../../../public/Tabs/potencia.jpg';
 import project2 from '../../../public/Tabs/Hackaton.webp';
 import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
-import { FaBootstrap, FaGithub, FaPhp } from "react-icons/fa";
-import { TiHtml5 } from "react-icons/ti";
-import { SiMysql } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { DiDjango } from "react-icons/di";
-import { FaReact } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiAxios } from "react-icons/si";
-import { SiHiveBlockchain } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io5";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiFirebase } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-import { SiExpo } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
-import { FaDocker } from "react-icons/fa";
+import project5 from '../../../public/Tabs/Task.png'
+import project6 from '../../../public/Tabs/Convert.png'
+import { SiTypescript } from "react-icons/si";
+import { FaBootstrap, FaGithub, FaPhp, FaAngular, FaFilePdf, FaFileWord  } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
+import { GrTrigger } from "react-icons/gr"; import { TiHtml5 } from "react-icons/ti"; import { SiMysql, SiExpress, SiHiveBlockchain, SiFirebase, SiExpo } from "react-icons/si"; import { DiDjango } from "react-icons/di"; import { FaReact, FaNodeJs, FaDocker } from "react-icons/fa"; import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri"; import { BiLogoPostgresql } from "react-icons/bi"; import { SiAxios } from "react-icons/si"; import { TbBrandReactNative } from "react-icons/tb"; import { IoLogoJavascript } from "react-icons/io5";
 
 const projects = [
   {
@@ -84,6 +73,37 @@ const projects = [
       { name: "Html5", icon: <TiHtml5 className="text-yellow-500 h-8 w-8" /> },
       { name: "Javascript", icon: <IoLogoJavascript className="text-yellow-400 h-8 w-8" /> },
       { name: "MySQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
+    ],
+  },
+  {
+    id: 5,
+    title: "BackEnd CRUD con Nest.js y clave foranea",
+    description: "Desarrollar una Aplicacion Web para la gestion de tareas de un equipo de trabajo con un crud de tareas, usuarios y proyectos.",
+    imageUrl: project5,
+    githubUrl: "https://github.com/JulianMbp/Back-CRUD-con-nest-y-clave-foranea.git", 
+    technologies: [
+      { name: "Angular", icon: <FaAngular className="text-purple-50 h-8 w-8" /> },
+      { name: "Nest.js", icon: <SiNestjs className= "text-black h-8 w-8" />},
+      { name: "PostgreSQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+    ],
+  },
+  {
+    id: 6,
+    title: "Convertidor de Archivos",
+    description: "Aplicacion web para convertir archivos de word a pdf mas login de usuarios",
+    imageUrl: project6,
+    githubUrl: "https://github.com/JulianMbp/Login.git", 
+    technologies: [
+      { name: "Next.js", icon: <RiNextjsFill className="text-purple-50 h-8 w-8" /> },
+      { name: "Node.js", icon: <FaNodeJs className="text-green-500 h-8 w-8" /> },
+      { name: "PostgreSQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "Word", icon: <FaFileWord className="text-white h-8 w-8" /> },
+      { name: "Pdf", icon: <FaFilePdf className="text-red-500 h-8 w-8" /> },
+      { name: "Trigger.dev", icon: <GrTrigger className="text-gray-500 h-8 w-8" /> },
     ],
   },
 ];
