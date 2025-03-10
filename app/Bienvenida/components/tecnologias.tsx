@@ -9,7 +9,6 @@ import {
   FaGitAlt,
   FaGithub,
   FaJava,
-  FaAws,
   FaGoogle,
   FaEthereum,
 } from "react-icons/fa";
@@ -18,6 +17,11 @@ import { Typewriter } from "react-simple-typewriter";
 import { TbBrandOffice } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
+import { SiFirebase } from "react-icons/si";
+
+import { GrTrigger } from "react-icons/gr";
+
 
 
 const techGroups = [
@@ -64,7 +68,7 @@ const techGroups = [
   {
     title: "Cloud Platforms",
     technologies: [
-      { name: "Azure", icon: <FaAws className="text-blue-500" /> },
+      { name: "Azure", icon: <VscAzure className="text-blue-500" /> },
       { name: "Google Cloud", icon: <FaGoogle className="text-red-500" /> },
     ],
   },
@@ -84,6 +88,8 @@ const techGroups = [
       { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
       { name: "Flutter", icon: <SiFlutter className="text-blue-400" /> },
       { name: "Blockchain", icon: <FaEthereum className="text-gray-500" /> },
+      { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
+      { name: "Triggers", icon: <GrTrigger className="text-yellow-500" /> },
 
     ],
   },
