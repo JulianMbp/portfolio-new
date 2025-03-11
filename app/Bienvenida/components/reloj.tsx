@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Clock: React.FC = () => {
   const [time, setTime] = useState<string>("");
@@ -23,7 +23,7 @@ const Clock: React.FC = () => {
 
   return (
     <div className="flex items-center font-mono justify-center text-white">
-        <p className="text-lg font-mono">{time}</p>
+        <p className="text-[10px] sm:text-xs font-mono">{time}</p>
     </div>
   );
 };

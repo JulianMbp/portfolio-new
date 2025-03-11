@@ -1,24 +1,21 @@
 'use client'
-import React from "react";
 import { motion } from "framer-motion";
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
-  FaPython,
-  FaNodeJs,
-  FaReact,
   FaDocker,
+  FaEthereum,
   FaGitAlt,
   FaGithub,
-  FaJava,
   FaGoogle,
-  FaEthereum,
+  FaJava,
+  FaNodeJs,
+  FaPython,
+  FaReact,
 } from "react-icons/fa";
-import { SiDjango, SiJavascript, SiMongodb, SiPrisma, SiExpress, SiNextdotjs, SiFlutter, SiSpringboot } from "react-icons/si";
-import { Typewriter } from "react-simple-typewriter";
+import { SiDjango, SiExpress, SiFirebase, SiFlutter, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiPrisma, SiSpringboot } from "react-icons/si";
 import { TbBrandOffice } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiMysql } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
-import { SiFirebase } from "react-icons/si";
+import { Typewriter } from "react-simple-typewriter";
 
 import { GrTrigger } from "react-icons/gr";
 
@@ -97,8 +94,8 @@ const techGroups = [
 
 const TechCarousel = () => {
   return (
-    <div className="flex flex-col items-center justify-center  text-white rounded-xl mt-2">
-      <h1 className="text-6xl font-bold h-32">
+    <div className="flex flex-col items-center justify-center text-white rounded-xl mt-1">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold h-10 sm:h-12 md:h-16 lg:h-20 overflow-hidden">
               <Typewriter
                   words={[
                     "<Tecnologías/>"          
@@ -110,26 +107,26 @@ const TechCarousel = () => {
                   deleteSpeed={100}
                   delaySpeed={4000}
                 /></h1>
-      <div className="grid grid-cols-3 gap-5 p-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 p-1 sm:p-2 md:p-3">
         {techGroups.map((group, index) => (
           <motion.div
             key={index}
-            className="bg-gray-800 p-5 rounded-lg shadow-lg"
+            className="bg-gray-800 p-2 sm:p-3 rounded-lg shadow-lg"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <h2 className="text-2xl font-semibold mb-5">{group.title}</h2>
-            <div className="flex flex-wrap gap-5">
+            <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold mb-1 sm:mb-2">{group.title}</h2>
+            <div className="flex flex-wrap gap-1 sm:gap-2">
               {group.technologies.map((tech, i) => (
                 <motion.div
                   key={i}
                   className="flex flex-col items-center text-wrap"
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <div className="text-4xl">{tech.icon}</div>
-                  <p className="mt-2 text-lg">{tech.name}</p>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl">{tech.icon}</div>
+                  <p className="mt-1 text-[10px] sm:text-xs md:text-sm">{tech.name}</p>
                 </motion.div>
               ))}
             </div>
