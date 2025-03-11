@@ -1,7 +1,7 @@
 "use client"
 import BtnAccion from '@/app/Bienvenida/components/btnAccion';
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+import { Typewriter } from "react-simple-typewriter";
 
 const techGroups = [
   {
@@ -178,11 +178,13 @@ export default function ExperiencesSection() {
           >
             <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3 md:mb-4 text-white">
               <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString(group.title)
-                    .start();
-                }}
+                words={[group.title]}
+                loop={1}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
               />
             </h2>
             <div className="h-auto p-2 sm:p-3 md:p-4 border border-gray-50 rounded-lg bg-azul-800">
