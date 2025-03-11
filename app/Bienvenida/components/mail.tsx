@@ -17,14 +17,16 @@ const CopyEmail: React.FC = () => {
   };
 
   return (
-    <div className="relative flex items-center gap-1 sm:gap-2 w-full">
-      <p className="text-xs sm:text-sm md:text-base truncate w-full">julian.bastidasmp@gmail.com</p>
+    <div className="relative flex items-start gap-1 sm:gap-2">
+      <a className="text-xs sm:text-sm hover:text-blue-500 hover:underline-offset-1 hover:scale-110 transition-all truncate">
+        julian.bastidasmp@gmail.com
+      </a>
       <button
-        className="hover:text-blue-500 active:scale-95 active:duration-200 hover:scale-110 transition-all cursor-pointer flex-shrink-0 p-1"
+        className="hover:text-blue-500 active:scale-95 active:duration-200 hover:scale-110 transition-all cursor-pointer flex-shrink-0 p-0.5"
         onClick={copyToClipboard}
         aria-label="Copiar correo electrónico"
       >
-        <MdContentCopy className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+        <MdContentCopy className="h-3 w-3 sm:h-4 sm:w-4" />
       </button>
 
       {/* Tooltip */}
