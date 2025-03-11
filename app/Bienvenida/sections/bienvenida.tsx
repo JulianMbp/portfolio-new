@@ -12,7 +12,7 @@ function Bienvenida() {
                 <div className="flex justify-center items-center w-full sm:w-auto">
                     <Image 
                         className="rounded-full transition-all ease-in-out duration-300
-                        h-[120px] w-[120px] sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px] lg:h-[220px] lg:w-[220px]
+                        h-[120px] w-[120px] sm:h-[150px] sm:w-[150px] md:h-[180px] md:w-[180px] lg:h-[400px] lg:w-[400px]
                         object-cover shadow-2xl shadow-black" 
                         src={Me} 
                         alt="Foto de perfil de Julian" 

@@ -27,15 +27,17 @@ const ButtonPage: React.FC = () => {
           <p className="font-semibold text-base sm:text-lg text-azul-400">Numero de Contacto</p>
           <p className="text-zinc-950 text-sm sm:text-base">315-242-74-21</p>
           <p className="font-semibold text-base sm:text-lg text-azul-400 mt-2 sm:mt-3">Correo Electronico</p>
-          <dl className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-x-4">
-            <Mail></Mail>
-            <a className="duration-300 gap-1 text-slate-50 w-full sm:w-auto text-nowrap flex items-center justify-center rounded-lg sm:rounded-xl md:rounded-2xl px-1 py-1 sm:py-2 text-xs sm:text-sm md:text-base bg-azul-500
+          <div className="flex flex-col w-full gap-2 sm:gap-3">
+            <div className="w-full">
+              <Mail />
+            </div>
+            <a className="duration-300 gap-1 text-slate-50 w-full text-nowrap flex items-center justify-center rounded-lg sm:rounded-xl md:rounded-2xl px-2 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base bg-azul-500
                       shadow-lg hover:border-hidden hover:scale-105 active:scale-95 active:duration-200 
-                      hover:shadow-lg transition-all mt-2 sm:mt-0" href="mailto:julian.bastidasmp@gmail.com">
-              <IoIosMail className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6"></IoIosMail>
+                      hover:shadow-lg transition-all" href="mailto:julian.bastidasmp@gmail.com">
+              <IoIosMail className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6" />
               <span className="ml-1">Escribir Correo</span>
             </a>
-          </dl>
+          </div>
         </div>
       </Modal>
       </section>
