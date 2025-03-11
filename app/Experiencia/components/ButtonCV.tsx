@@ -1,24 +1,29 @@
 'use client'
+import { FaFileDownload } from 'react-icons/fa';
 
-function ButtonCV(){
-    return(
-        <button className=" h-10 duration-300 flex items-center rounded-3xl p-3 
-            bg-gradient-to-br from-azul-500 via-azul-600 to-azul-700 gap-3 
-            shadow-2xl drop-shadow-2xl hover:border-hidden hover:scale-110 active:scale-95 active:duration-200 
-            hover:shadow-2xl transition-all  " >
-            <a className="flex gap-2"
-                href="https://drive.google.com/file/d/12j5U5CZJAC6yy3Mg0jEfXIMPy9fz3N3t/view?usp=drive_link">
-            <dl className=" text-azul-50 font-medium text-lg">
-                <h1 className='block'>CV</h1>
-            </dl>
-            <svg className="animate-bounce h-5 w-5 text-azul-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-            </a>
-    </button>
+const ButtonCV: React.FC = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/CV_Julian_Bastidas.pdf';
+        link.download = 'CV_Julian_Bastidas.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    return (
+        <section className="w-full">
+            <button
+                className='h-8 sm:h-10 md:h-12 w-full shadow-lg drop-shadow-lg duration-300 flex items-center justify-center rounded-lg sm:rounded-xl md:rounded-2xl p-1 sm:p-2 md:p-3 bg-gradient-to-br from-azul-700 via-azul-600 to-azul-500 gap-1 sm:gap-2 
+                hover:border-hidden hover:scale-105 active:scale-95 active:duration-200 
+                hover:shadow-lg transition-all'
+                onClick={handleDownload}
+            >
+                <FaFileDownload className="order-2 h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-azul-50" />
+                <h1 className="text-azul-50 order-1 font-medium text-xs sm:text-sm md:text-base">Descargar CV</h1>
+            </button>
+        </section>
     );
-}
+};
 
 export default ButtonCV;
