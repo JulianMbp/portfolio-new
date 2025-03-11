@@ -30,7 +30,7 @@ export default function SobreMi() {
                 {/* Botón de menú hamburguesa */}
                 <button 
                     onClick={toggleMenu} 
-                    className="absolute top-3 right-3 z-50 bg-gray-800 text-white p-2 rounded-full shadow-lg"
+                    className="absolute top-3 right-3 z-50 bg-azul-400 text-white p-2 rounded-full shadow-lg"
                     aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
                 >
                     {menuOpen ? (
