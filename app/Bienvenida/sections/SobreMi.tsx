@@ -41,7 +41,7 @@ export default function SobreMi() {
                 </button>
                 
                 {/* Menú lateral con información personal - Responsive y deslizable */}
-                <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={toggleMenu}></div>
+                <div className={`fixed top-0 bottom-0 left-4 right-4 sm:left-8 sm:right-8 md:left-12 md:right-12 lg:left-16 lg:right-16 bg-black bg-opacity-50 z-40 transition-opacity duration-300 rounded-xl ${menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={toggleMenu}></div>
                 
                 <menu className={`fixed top-0 right-0 h-full w-64 sm:w-72 md:w-80 bg-azul-950 border-l-2 border-black shadow-2xl z-40 transition-transform duration-300 ease-in-out overflow-y-auto ${menuOpen ? 'translate-x-0' : 'translate-x-full'} p-4`}>
                     <div className='justify-center items-center flex px-2 sm:px-4 mt-10'>
@@ -102,10 +102,10 @@ export default function SobreMi() {
                 </menu>
                 
                 {/* Secciones de contenido principal - Responsive */}
-                <div className="flex flex-col gap-3 sm:gap-4 w-full">
-                    <section className="border-2 mb-3 sm:mb-4 rounded-2xl w-full border-black p-2 sm:p-3 md:p-4 lg:p-5 drop-shadow-2xl shadow-2xl bg-gray-900">
+                <div className="flex flex-col gap-3 sm:gap-4">
+                    <section className="border-2 mb-3 sm:mb-4 rounded-2xl w-full border-black p-2 sm:p-3 md:p-4 lg:p-5 drop-shadow-2xl shadow-2xl bg-gray-900 ">
                         <Accion></Accion>
-                        <div className="">
+                        <div className="flex justify-center w-full">
                             <Sobremi></Sobremi>
                         </div>
                     </section>
