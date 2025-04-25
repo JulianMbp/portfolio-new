@@ -132,6 +132,10 @@ export default function SobreMi() {
                                     <p className='text-xs sm:text-sm'>Practicante ParqueSoft Nariño</p>
                                 </div>
                                 <div className='flex pl-2 justify-start items-center text-azul-50 gap-2 hover:bg-azul-900 p-2 rounded-lg transition-colors duration-300'>
+                                    <MdOutlineWorkOutline className='h-4 w-4 sm:h-5 sm:w-5 text-azul-300 flex-shrink-0'></MdOutlineWorkOutline>
+                                    <p className='text-xs sm:text-sm'>Joven Investigador de la U. Cooperativa en convenio con U. de Nariño </p>
+                                </div>
+                                <div className='flex pl-2 justify-start items-center text-azul-50 gap-2 hover:bg-azul-900 p-2 rounded-lg transition-colors duration-300'>
                                     <CiLocationOn className='h-4 w-4 sm:h-5 sm:w-5 text-azul-300 flex-shrink-0'></CiLocationOn>
                                     <p className='text-xs sm:text-sm'>Colombia</p>
                                 </div>
