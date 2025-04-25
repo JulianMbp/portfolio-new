@@ -1,5 +1,5 @@
 'use client';
-import Me from '@/public/img/julian-pixel (1).webp';
+import Me from '@/public/img/AboutMePerfil.webp';
 import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 import ButtonPage from '../components/ButtonContact';

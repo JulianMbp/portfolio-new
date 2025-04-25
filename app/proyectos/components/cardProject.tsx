@@ -6,8 +6,13 @@ import project1 from '../../../public/Tabs/potencia.jpg';
 import project2 from '../../../public/Tabs/Hackaton.webp';
 import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
-import project5 from '../../../public/Tabs/Task.png'
-import project6 from '../../../public/Tabs/Convert.png'
+import project5 from '../../../public/Tabs/Task.png';
+import project6 from '../../../public/Tabs/Convert.png';
+import project7 from '../../../public/Tabs/pets_mobile.jpg';
+import project8 from '../../../public/Tabs/facebook_search.png';
+import { SiN8N } from "react-icons/si";
+import { FaMeta } from "react-icons/fa6";
+
 import { SiTypescript } from "react-icons/si";
 import { FaBootstrap, FaGithub, FaPhp, FaAngular, FaFilePdf, FaFileWord  } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
@@ -42,6 +47,35 @@ const projects = [
       { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
       { name: "FireBase", icon: <SiFirebase className="text-orange-600 h-8 w-8" /> },
       { name: "Expo", icon: <SiExpo className="text-slate-950 h-8 w-8" /> },
+      { name: "IoT", icon: <SiHiveBlockchain className="text-slate-50 h-8 w-8" /> },
+    ],
+  },
+  {
+    id: 8,
+    title: "Meta Search",
+    description: "Esta es una aplicacion para buscar publciaciones en las aplicaciones de meta (Facebook e Instagram), y tambien responder comentarios de las publicaciones, asi como responder al DM de las personas que te escriben. A traves de webhook en n8n.dev",
+    imageUrl: project8,
+    githubUrl: "https://youtu.be/w0Q2e4bDreM", 
+    technologies: [
+      { name: "Angular", icon: <FaAngular className="text-purple-50 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
+      { name: "N8N", icon: <SiN8N className="text-slate-950 h-8 w-8" /> },
+      { name: "Meta", icon: <FaMeta className="text-blue-500 h-8 w-8" /> },
+    ],
+  },
+  {
+    id: 7,
+    title: "Aplicaion Mobile de seguimiento de mascotas con IoT",
+    description: "Aplicacion mobile para la geolocalizacion de mascotas y seguimiento en vivo con un crud de mascotas, usuarios y localizacion, click en el boton Repositorio para descargar la apk",
+    imageUrl: project7,
+    githubUrl: "https://expo.dev/artifacts/eas/4PABGZNV7V8iHfLUVfy3TJ.apk", 
+    technologies: [
+      { name: "Expo", icon: <SiExpo className="text-slate-950 h-8 w-8" /> },
+      { name: "IoT", icon: <SiHiveBlockchain className="text-slate-50 h-8 w-8" /> },
+      { name: "React Native", icon: <TbBrandReactNative className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "Django", icon: <DiDjango className= "text-slate-900 h-8 w-8" />      },
     ],
   },
   {
@@ -59,6 +93,23 @@ const projects = [
       { name: "Axios", icon: <SiAxios className="text-slate-950 h-8 w-8" /> },
       { name: "Express", icon: <SiExpress className="text-slate-950 h-8 w-8" /> },
       { name: "Docker", icon: <FaDocker className="text-blue-400 h-8 w-8" /> },
+    ],
+  },
+  {
+    id: 6,
+    title: "Convertidor de Archivos",
+    description: "Aplicacion web para convertir archivos de word a pdf mas login de usuarios",
+    imageUrl: project6,
+    githubUrl: "https://github.com/JulianMbp/Login.git", 
+    technologies: [
+      { name: "Next.js", icon: <RiNextjsFill className="text-purple-50 h-8 w-8" /> },
+      { name: "Node.js", icon: <FaNodeJs className="text-green-500 h-8 w-8" /> },
+      { name: "PostgreSQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
+      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
+      { name: "Word", icon: <FaFileWord className="text-white h-8 w-8" /> },
+      { name: "Pdf", icon: <FaFilePdf className="text-red-500 h-8 w-8" /> },
+      { name: "Trigger.dev", icon: <GrTrigger className="text-gray-500 h-8 w-8" /> },
     ],
   },
   {
@@ -89,23 +140,9 @@ const projects = [
       { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
     ],
   },
-  {
-    id: 6,
-    title: "Convertidor de Archivos",
-    description: "Aplicacion web para convertir archivos de word a pdf mas login de usuarios",
-    imageUrl: project6,
-    githubUrl: "https://github.com/JulianMbp/Login.git", 
-    technologies: [
-      { name: "Next.js", icon: <RiNextjsFill className="text-purple-50 h-8 w-8" /> },
-      { name: "Node.js", icon: <FaNodeJs className="text-green-500 h-8 w-8" /> },
-      { name: "PostgreSQL", icon: <SiMysql className="text-azul-50 h-8 w-8" /> },
-      { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
-      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
-      { name: "Word", icon: <FaFileWord className="text-white h-8 w-8" /> },
-      { name: "Pdf", icon: <FaFilePdf className="text-red-500 h-8 w-8" /> },
-      { name: "Trigger.dev", icon: <GrTrigger className="text-gray-500 h-8 w-8" /> },
-    ],
-  },
+
+
+
 ];
 
 const Portfolio = () => {
