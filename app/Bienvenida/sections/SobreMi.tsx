@@ -58,7 +58,7 @@ export default function SobreMi() {
                     {/* Botón de menú hamburguesa - Solo visible en pantallas md y menores */}
                     <button 
                         onClick={toggleMenu} 
-                        className="lg:hidden fixed top-4 left-4 z-50 bg-azul-400 text-white p-2 rounded-full shadow-lg hover:bg-azul-500 transition-colors duration-300"
+                        className="lg:hidden fixed top-2 right-7 z-50 bg-azul-400 text-white p-2 rounded-full shadow-lg hover:bg-azul-500 transition-colors duration-300"
                         aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
                     >
                         {menuOpen ? (
