@@ -66,7 +66,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Aplicaion Mobile de seguimiento de mascotas con IoT",
+    title: "Aplicacion Mobile de seguimiento de mascotas con IoT",
     description: "Aplicacion mobile para la geolocalizacion de mascotas y seguimiento en vivo con un crud de mascotas, usuarios y localizacion, click en el boton Repositorio para descargar la apk",
     imageUrl: project7,
     githubUrl: "https://expo.dev/artifacts/eas/4PABGZNV7V8iHfLUVfy3TJ.apk", 
