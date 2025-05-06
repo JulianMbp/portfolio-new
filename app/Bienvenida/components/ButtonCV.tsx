@@ -7,7 +7,7 @@ function ButtonCV(){
             shadow-xl drop-shadow-xl hover:border-hidden hover:scale-105 sm:hover:scale-110 active:scale-95 active:duration-200 
             hover:shadow-xl transition-all" >
             <a className="flex gap-1 sm:gap-2 items-center"
-                href="https://drive.google.com/file/d/12j5U5CZJAC6yy3Mg0jEfXIMPy9fz3N3t/view?usp=drive_link">
+                href="https://drive.google.com/file/d/1LQKsldsrRGMFp0QK6Q1E2SuARMmeqlCM/view?usp=sharing">
                 <dl className="flex text-azul-50 font-medium text-sm sm:text-base md:text-lg lg:text-2xl">
                     <h1 className="">Descargar</h1>
                     <h1 className='ml-1'>CV</h1>
