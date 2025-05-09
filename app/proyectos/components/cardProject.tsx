@@ -8,7 +8,6 @@ import project3 from '../../../public/Tabs/EPS.webp';
 import project4 from '../../../public/Tabs/AppFilipense.webp';
 import project5 from '../../../public/Tabs/Task.png';
 import project6 from '../../../public/Tabs/Convert.png';
-import project7 from '../../../public/Tabs/pets_mobile.jpg';
 import project8 from '../../../public/Tabs/facebook_search.png';
 import { SiN8N } from "react-icons/si";
 import { FaMeta } from "react-icons/fa6";
@@ -62,20 +61,6 @@ const projects = [
       { name: "TypeScript", icon: <SiTypescript className="text-azul-300 h-8 w-8" /> },
       { name: "N8N", icon: <SiN8N className="text-slate-950 h-8 w-8" /> },
       { name: "Meta", icon: <FaMeta className="text-blue-500 h-8 w-8" /> },
-    ],
-  },
-  {
-    id: 7,
-    title: "Aplicacion Mobile de seguimiento de mascotas con IoT",
-    description: "Aplicacion mobile para la geolocalizacion de mascotas y seguimiento en vivo con un crud de mascotas, usuarios y localizacion, click en el boton Repositorio para descargar la apk",
-    imageUrl: project7,
-    githubUrl: "https://expo.dev/artifacts/eas/4PABGZNV7V8iHfLUVfy3TJ.apk", 
-    technologies: [
-      { name: "Expo", icon: <SiExpo className="text-slate-950 h-8 w-8" /> },
-      { name: "IoT", icon: <SiHiveBlockchain className="text-slate-50 h-8 w-8" /> },
-      { name: "React Native", icon: <TbBrandReactNative className="text-azul-300 h-8 w-8" /> },
-      { name: "Tailwind", icon: <RiTailwindCssFill className="text-cyan-300 h-8 w-8" /> },
-      { name: "Django", icon: <DiDjango className= "text-slate-900 h-8 w-8" />      },
     ],
   },
   {
